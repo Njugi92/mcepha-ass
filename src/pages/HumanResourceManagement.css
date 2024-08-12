@@ -1,0 +1,65 @@
+.human-resource-management-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.human-resource-management-content {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Left side styling */
+.human-resource-management-left {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-right: 1px solid #ddd;
+}
+
+.human-resource-management-left h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.human-resource-management-left p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Right side styling */
+.human-resource-management-right {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.map-container {
+    margin-bottom: 20px;
+}
+
+.view-larger-map-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.view-larger-map-button:hover {
+    background-color: #0056b3;
+}
+
+.location-details {
+    margin-top: 20px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.location-details p {
+    margin: 5px 0;
+}

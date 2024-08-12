@@ -1,0 +1,78 @@
+/* src/pages/OperationsImprovement.css */
+.operations-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.operations-left,
+.operations-right {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 4rem;
+}
+
+.operations-left>h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.operations-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.map-container {
+    position: relative;
+}
+
+.view-larger-map-button {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.view-larger-map-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.location-details,
+.contact-details {
+    margin-top: 1rem;
+    color: #333;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.contact-details {
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .operations-wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .operations-left {
+        width: 60%;
+    }
+
+    .operations-right {
+        width: 35%;
+    }
+}

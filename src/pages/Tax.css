@@ -1,0 +1,128 @@
+.tax-wrapper {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-width {
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.tax-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.tax-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tax-info {
+    text-align: center;
+}
+
+.tax-info p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.tax-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.tax-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tax-calculator input {
+    width: 100%;
+    max-width: 400px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.tax-calculator button {
+    padding: 0.8rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.tax-calculator button:hover {
+    background-color: #0056b3;
+}
+
+.tax-results {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.tax-results .deduction-item {
+    margin-bottom: 1rem;
+}
+
+.tax-results p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.tax-results p strong {
+    font-weight: bold;
+    color: #000;
+}
+
+.file-returns-button {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.file-returns-button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .tax-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .tax-info {
+        width: 50%;
+    }
+
+    .tax-calculator {
+        width: 50%;
+        align-items: flex-start;
+    }
+}

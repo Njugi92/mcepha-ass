@@ -1,0 +1,152 @@
+.business-advisory-wrapper {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-width {
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.business-advisory-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.business-advisory-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.business-advisory-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.business-advisory-image {
+    width: 100%;
+    height: 75px;
+    /* Reduced height by 50% */
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.business-advisory-image:hover {
+    transform: scale(1.05);
+}
+
+.business-advisory-link {
+    margin-top: 0.5rem;
+    text-align: center;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.business-advisory-link:hover {
+    color: #0056b3;
+}
+
+.business-advisory-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.map-container {
+    position: relative;
+    text-align: center;
+}
+
+.view-larger-map-button {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.view-larger-map-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.location-details {
+    margin-top: 0.5rem;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.menu-items ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.menu-items li {
+    cursor: pointer;
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.menu-items li:hover {
+    color: #0056b3;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .business-advisory-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .business-advisory-left {
+        width: 60%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .business-advisory-item {
+        width: calc(50% - 1rem);
+    }
+
+    .business-advisory-right {
+        width: 35%;
+    }
+}
+
+/* Additional Responsive Design for Smaller Screens */
+@media (max-width: 767px) {
+    .business-advisory-item {
+        width: 100%;
+    }
+
+    .business-advisory-right {
+        width: 100%;
+    }
+
+    .map-container {
+        margin-top: 2rem;
+    }
+}

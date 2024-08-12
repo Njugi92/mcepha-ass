@@ -1,9 +1,37 @@
+/* Default styles for screens greater than 900px */
 .c-container {
     justify-content: space-around;
     gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Ensure images are spread evenly across four columns by default */
 }
 
 .c-container>img {
     width: 10rem;
     border-radius: 5px;
+}
+
+.c-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Two columns on medium screens */
+@media (min-width: 400px) and (max-width: 900px) {
+    .c-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        /* Center the two columns */
+    }
+}
+
+/* Single column on small screens */
+@media (max-width: 399px) {
+    .c-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }

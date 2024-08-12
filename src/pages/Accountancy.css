@@ -1,0 +1,109 @@
+/* Base styles */
+.accountancy-wrapper {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.accountancy-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.accountancy-text {
+    max-width: 600px;
+}
+
+.accountancy-text h1 {
+    font-size: 2.5rem;
+    color: #3a170a;
+    margin-bottom: 1rem;
+}
+
+.accountancy-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.services-list li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.cta-button {
+    padding: 0.8rem 2rem;
+    background-color: #3a170a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2a0e07;
+}
+
+/* Image styling */
+.accountancy-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .accountancy-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .accountancy-text {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .accountancy-image img {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .accountancy-text h1 {
+        font-size: 2rem;
+    }
+
+    .accountancy-text p {
+        font-size: 1rem;
+    }
+
+    .services-list li {
+        font-size: 1rem;
+    }
+}
