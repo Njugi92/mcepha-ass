@@ -32,6 +32,7 @@
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 .audit-description {
@@ -55,11 +56,13 @@
     width: 100%;
     text-align: center;
     margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .audit-image {
     max-width: 100%;
     border-radius: 8px;
+    margin-top: 2.5rem;
     transition: transform 0.3s ease-in-out;
 }
 

@@ -82,7 +82,6 @@ const OperationsImprovement = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

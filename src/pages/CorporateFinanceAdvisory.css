@@ -1,0 +1,110 @@
+.corporate-finance-advisory-wrapper {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.inner-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 2rem;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-side,
+.right-side {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.left-side {
+    margin-right: 10px;
+}
+
+.right-side {
+    margin-left: 10px;
+}
+
+.map-container {
+    margin-bottom: 20px;
+}
+
+.view-larger-map-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.view-larger-map-button:hover {
+    background-color: #0056b3;
+}
+
+.location-details {
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+.location-details p {
+    margin: 5px 0;
+}
+
+.location-details a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.location-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        margin: 0;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.5rem;
+    }
+
+    .view-larger-map-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .location-details p {
+        font-size: 0.9rem;
+    }
+}

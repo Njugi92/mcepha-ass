@@ -38,7 +38,7 @@ const Header = () => {
     <section className="h-wrapper contain dark-nav">
       <div className="flexCenter paddings innerWidth h-container">
         <RouterLink to="/">
-          <img src="./mcephalogo.png" alt="logo" width={100} />
+          <img src="/mcephalogo.png" alt="logo" width={100} />
         </RouterLink>
 
         <OutsideClickHandler

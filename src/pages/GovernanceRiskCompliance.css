@@ -1,0 +1,78 @@
+.governance-risk-compliance-wrapper {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-family: Arial, sans-serif;
+    
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 4rem;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    width: 48%;
+    font-size: 18px;
+}
+
+.right-side {
+    width: 48%;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    margin-bottom: 20px;
+}
+
+.view-larger-map-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.view-larger-map-button:hover {
+    background-color: #0056b3;
+}
+
+.location-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.location-details strong {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+}

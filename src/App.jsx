@@ -16,6 +16,12 @@ import Audit from "./pages/Audit";
 import BusinessAdvisory from "./pages/BusinessAdvisory";
 import OperationsImprovement from "./pages/OperationsImprovement";
 import HumanResourceManagement from "./pages/HumanResourceManagement";
+import TechnologyAndSystemsManagement from "./pages/TechnologyAndSystemsManagement";
+import GovernanceRiskCompliance from "./pages/GovernanceRiskCompliance";
+import EnterprisePerformanceManagement from "./pages/EnterprisePerformanceManagement";
+import DueDiligenceReports from "./pages/DueDiligenceReports";
+import CorporateFinanceAdvisory from "./pages/CorporateFinanceAdvisory";
+
 import "./App.css";
 
 function App() {
@@ -47,12 +53,32 @@ function App() {
             <Route path="/audit" element={<Audit />} />
             <Route path="/business-advisory" element={<BusinessAdvisory />} />
             <Route
-              path="/operations-improvement"
+              path="/businessadvisory/operations-improvement"
               element={<OperationsImprovement />}
             />
             <Route
-              path="/human-resource-management"
+              path="/businessadvisory/human-resource-management"
               element={<HumanResourceManagement />}
+            />
+            <Route
+              path="/businessadvisory/technologyandsystemsmanagement"
+              element={<TechnologyAndSystemsManagement />}
+            />
+            <Route
+              path="/BusinessAdvisory/GovernanceRiskCompliance"
+              element={<GovernanceRiskCompliance />}
+            />
+            <Route
+              path="/businessadvisory/enterpriseperformancemanagement"
+              element={<EnterprisePerformanceManagement />}
+            />
+            <Route
+              path="/businessadvisory/duediligencereports"
+              element={<DueDiligenceReports />}
+            />
+            <Route
+              path="/businessadvisory/corporatefinanceadvisory"
+              element={<CorporateFinanceAdvisory />}
             />
           </Routes>
           <Footer />
