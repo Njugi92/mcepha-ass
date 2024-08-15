@@ -18,8 +18,8 @@ const BusinessAdvisory = () => {
     "Governance Risk and Compliance",
     "Enterprise Performance Management",
     "Due Diligence Reports",
-    "Corporate Finance Advisory", // Added link
-    "Receivables Management",
+    "Corporate Finance Advisory",
+    "Receivables Management", // Added link
     "Independent Business Reviews",
     "Debt Financing and Management Advisory",
     "Controlling Costs and Increasing Profitability",
@@ -82,6 +82,13 @@ const BusinessAdvisory = () => {
                 ) : description === "Corporate Finance Advisory" ? (
                   <RouterLink
                     to="/businessadvisory/corporatefinanceadvisory"
+                    className="business-advisory-link"
+                  >
+                    {description}
+                  </RouterLink>
+                ) : description === "Receivables Management" ? (
+                  <RouterLink
+                    to="/businessadvisory/receivablesmanagement"
                     className="business-advisory-link"
                   >
                     {description}

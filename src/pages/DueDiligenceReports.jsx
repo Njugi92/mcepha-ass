@@ -3,10 +3,10 @@ import "./DueDiligenceReports.css";
 
 const DueDiligenceReports = () => {
   return (
-    <div className="due-diligence-reports">
-      <main>
+    <div className="due-diligence-reports-wrapper">
+      <header className="due-diligence-title">Due Diligence Reports</header>
+      <main className="due-diligence-content">
         <div className="left-content">
-          <h1>Due Diligence Reports</h1>
           <p>
             Due diligence is a process of enquiry and investigation made by a
             prospective buyer in order to confirm that they are buying what they

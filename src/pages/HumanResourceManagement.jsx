@@ -11,10 +11,12 @@ const HumanResourceManagement = () => {
 
   return (
     <div className="human-resource-management-wrapper">
+      {/* Title Section */}
+      <div className="title">Human Resource Management</div>
+
       <div className="human-resource-management-content">
         {/* Left side - Human Resource Management Content */}
         <div className="human-resource-management-left">
-          <h2>Human Resource Management</h2>
           <p>
             Human resource management (HRM) is a key pillar in any organization
             which needs serious and critical attention. The Mcepha&Associates

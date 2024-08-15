@@ -16,11 +16,11 @@ const TechnologyAndSystemsManagement = () => {
         <div className="left-side">
           <p>
             The technology and system advisory services offered at
-            Mcepha&Associates help our clients utilise information technology
+            Mcepha&Associates help our clients utilize information technology
             and business systems to bolster their competitive advantage, improve
-            efficiency, control risks and reduce operational costs. The
+            efficiency, control risks, and reduce operational costs. The
             Mcepha&Associates advisory team in Kenya is skilled in IT strategic
-            planning, service management, information risk management and also
+            planning, service management, information risk management, and
             enterprise applications.
           </p>
         </div>

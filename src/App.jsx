@@ -21,6 +21,7 @@ import GovernanceRiskCompliance from "./pages/GovernanceRiskCompliance";
 import EnterprisePerformanceManagement from "./pages/EnterprisePerformanceManagement";
 import DueDiligenceReports from "./pages/DueDiligenceReports";
 import CorporateFinanceAdvisory from "./pages/CorporateFinanceAdvisory";
+import ReceivableManagement from "./pages/ReceivablesManagement";
 
 import "./App.css";
 
@@ -79,6 +80,10 @@ function App() {
             <Route
               path="/businessadvisory/corporatefinanceadvisory"
               element={<CorporateFinanceAdvisory />}
+            />
+            <Route
+              path="/businessadvisory/receivablesmanagement"
+              element={<ReceivableManagement />}
             />
           </Routes>
           <Footer />

@@ -1,114 +1,109 @@
-.corporate-finance-advisory-wrapper {
-    padding: 20px;
+.receivables-management-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
-.title-background {
+.title-section {
     background-color: orange;
-    width: 100%;
     height: 38vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: smooth-scroll 1s ease-out;
+    color: white;
+    position: relative;
+    animation: slideDown 1s ease-out;
 }
 
-.page-title {
-    color: white;
-    font-size: 2.5rem;
+.title-section h1 {
+    font-size: 3rem;
     font-weight: bold;
     text-align: center;
 }
 
-@keyframes smooth-scroll {
-    from {
+@keyframes slideDown {
+    0% {
         transform: translateY(-100%);
     }
 
-    to {
+    100% {
         transform: translateY(0);
     }
-}
-
-.inner-width {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .content-wrapper {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    padding-top: 20px;
-}
-
-.left-side,
-.right-side {
-    padding: 20px;
-    border-radius: 8px;
-    color: red;
+    padding: 2rem;
 }
 
 .left-side {
     flex: 0 0 74%;
     background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .right-side {
     flex: 0 0 26%;
     background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
+.logo-image {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.logo-image-img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 20px;
 }
 
 .map-container {
-    margin-bottom: 20px;
+    margin-bottom: 1rem;
 }
 
 .view-larger-map-button {
     display: block;
     margin: 10px auto;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 0.8rem 2rem;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
 }
 
 .view-larger-map-button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
-.location-details {
-    margin-top: 20px;
-    line-height: 1.6;
+.contact-details {
+    text-align: center;
+    color: #333;
+    font-size: 1.1rem;
+    margin-top: 1rem;
 }
 
-.location-details p {
-    margin: 5px 0;
-}
-
-.location-details a {
+.contact-details a {
     color: #007bff;
     text-decoration: none;
 }
 
-.location-details a:hover {
+.contact-details a:hover {
     text-decoration: underline;
 }
 
-/* Responsive Styles */
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .page-title {
-        font-size: 2rem;
-    }
-
     .content-wrapper {
         flex-direction: column;
     }
@@ -116,21 +111,25 @@
     .left-side,
     .right-side {
         margin: 0;
-        padding: 15px;
+        padding: 1rem;
+    }
+
+    .title-section h1 {
+        font-size: 2rem;
     }
 }
 
 @media (max-width: 480px) {
-    .page-title {
+    .title-section h1 {
         font-size: 1.5rem;
     }
 
     .view-larger-map-button {
-        padding: 8px 16px;
+        padding: 0.6rem 1.5rem;
         font-size: 0.9rem;
     }
 
-    .location-details p {
+    .contact-details {
         font-size: 0.9rem;
     }
 }

@@ -1,35 +1,44 @@
-.due-diligence-reports {
+.due-diligence-reports-wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-main {
+.due-diligence-title {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInFromTop 1.5s ease-in-out;
+    width: 100%;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.due-diligence-content {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 4rem;
     flex-wrap: wrap;
-    /* Allows items to wrap on smaller screens */
 }
 
 .left-content {
-    flex: 1;
-    margin-right: 20px;
-    min-width: 300px;
-    /* Ensures that the content is not too narrow on smaller screens */
-}
-
-.left-content h1 {
-    color: white;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.left-content p,
-.left-content ul {
-    color: #f0f0f0;
-    font-size: 1em;
+    flex-basis: 74%;
+    padding: 20px;
+    color: red;
 }
 
 .left-content ul {
@@ -38,10 +47,8 @@ main {
 }
 
 .right-content {
-    flex: 1;
-    margin-left: 20px;
-    min-width: 300px;
-    /* Ensures that the content is not too narrow on smaller screens */
+    flex-basis: 26%;
+    padding: 20px;
 }
 
 .logo {
@@ -55,11 +62,11 @@ main {
 }
 
 .contact-info {
-    color: #f0f0f0;
+    color: red;
 }
 
 .contact-info a {
-    color: #f0f0f0;
+    color: red;
     text-decoration: none;
 }
 
@@ -67,10 +74,9 @@ main {
     text-decoration: underline;
 }
 
-/* Media Queries for Responsive Design */
-
+/* Responsive Design */
 @media (max-width: 1200px) {
-    main {
+    .due-diligence-content {
         flex-direction: column;
     }
 
@@ -82,8 +88,10 @@ main {
 }
 
 @media (max-width: 768px) {
-    .left-content h1 {
-        font-size: 1.5em;
+    .due-diligence-title {
+        font-size: 2rem;
+        height: auto;
+        padding: 1rem;
     }
 
     .left-content p,
@@ -102,8 +110,8 @@ main {
 }
 
 @media (max-width: 480px) {
-    .left-content h1 {
-        font-size: 1.2em;
+    .due-diligence-title {
+        font-size: 1.5rem;
     }
 
     .left-content p,

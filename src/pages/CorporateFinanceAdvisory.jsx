@@ -1,5 +1,4 @@
 import React from "react";
-import { Link as RouterLink } from "react-router-dom";
 import "./CorporateFinanceAdvisory.css";
 
 const CorporateFinanceAdvisory = () => {
@@ -12,8 +11,10 @@ const CorporateFinanceAdvisory = () => {
 
   return (
     <section className="corporate-finance-advisory-wrapper">
-      <div className="inner-width">
+      <div className="title-background">
         <h1 className="page-title">Corporate Finance Advisory</h1>
+      </div>
+      <div className="inner-width">
         <div className="content-wrapper">
           <div className="left-side">
             <p>
@@ -24,6 +25,11 @@ const CorporateFinanceAdvisory = () => {
             </p>
           </div>
           <div className="right-side">
+            <img
+              src="/mcephalogo.png"
+              alt="Mcepha & Associates Logo"
+              className="logo"
+            />
             <div className="map-container">
               <iframe
                 title="Thika Equity Plaza"

@@ -29,7 +29,7 @@ const GovernanceRiskCompliance = () => {
           <div className="map-container">
             <iframe
               title="Mcepha & Associates"
-              src="https://www.google.com/maps/d/embed?mid=1EQyRfY9RSBmnkx0Ux7ODwMjTrkB_idg&ehbc=2E312F"
+              src="https://www.google.com/maps/d/embed?mid=1lAf8vnKS9o58Ztb4KiHIbFYmyduEdT8&ehbc=2E312F"
               width="100%"
               height="300"
               style={{ border: 0 }}
