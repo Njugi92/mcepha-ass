@@ -16,12 +16,15 @@ const Audit = () => {
 
   return (
     <section className="audit-wrapper">
+      <div className="audit-header">
+        <h1 className="audit-title">Our Audit Services</h1>
+      </div>
       <div className="inner-width">
         <div className="audit-content">
           <div className="audit-info">
-            <h1 className="audit-title">
+            <h2 className="audit-subtitle">
               External/Statutory Audit (Financial)
-            </h1>
+            </h2>
             <p className="audit-description">
               In accordance with statutory requirements and International
               Accounting Standards (IAS) as well as Risk assessment audits.
@@ -47,19 +50,24 @@ const Audit = () => {
           </div>
           <div className="audit-image-wrapper">
             <img
+              src="/mcephalogo.png"
+              alt="Mcepha & Associates Logo"
+              className="logo"
+            />
+            <img
               src="./audit-img.jpg"
               alt="Audit Services"
               className="audit-image"
             />
             <div className="audit-buttons">
               <button className="contact-button" onClick={handleContactClick}>
-                Contact Us
+                Contact
               </button>
               <button
                 className="exchange-rates-button"
                 onClick={handleExchangeRatesClick}
               >
-                See USD Exchange Rates
+                USD Exchange Rates
               </button>
             </div>
           </div>

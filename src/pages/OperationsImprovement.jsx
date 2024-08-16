@@ -44,6 +44,11 @@ const OperationsImprovement = () => {
             </p>
           </div>
           <div className="operations-right">
+            <img
+              src="/mcephalogo.png"
+              alt="Mcepha & Associates Logo"
+              className="logo"
+            />
             <div className="map-container">
               <iframe
                 title="Mcepha & Associates"

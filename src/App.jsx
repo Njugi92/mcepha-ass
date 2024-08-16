@@ -22,8 +22,11 @@ import EnterprisePerformanceManagement from "./pages/EnterprisePerformanceManage
 import DueDiligenceReports from "./pages/DueDiligenceReports";
 import CorporateFinanceAdvisory from "./pages/CorporateFinanceAdvisory";
 import ReceivableManagement from "./pages/ReceivablesManagement";
+import IndependentBusinessReviews from "./pages/IndependentBusinessReviews";
 
 import "./App.css";
+import DebtFinancingAndManagementAdvisory from "./pages/DebtFinancingAndManagementAdvisory";
+import ControllingCostsAndIncreasingProfitability from "./pages/ControllingCostsAndIncreasingProfitability";
 
 function App() {
   const [playState, setPlayState] = useState(false);
@@ -84,6 +87,18 @@ function App() {
             <Route
               path="/businessadvisory/receivablesmanagement"
               element={<ReceivableManagement />}
+            />
+            <Route
+              path="/businessadvisory/independentbusinessreviews"
+              element={<IndependentBusinessReviews />}
+            />
+            <Route
+              path="/businessadvisory/debtfinancingandmanagementadvisory"
+              element={<DebtFinancingAndManagementAdvisory />}
+            />
+            <Route
+              path="/businessadvisory/controllingcostsandincreasingprofitability"
+              element={<ControllingCostsAndIncreasingProfitability />}
             />
           </Routes>
           <Footer />

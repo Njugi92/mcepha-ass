@@ -1,26 +1,58 @@
 .audit-wrapper {
     width: 100%;
-    padding: 2rem;
     background-color: #f4f4f4;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
+.audit-header {
+    width: 100%;
+    height: 38vh;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: smoothScroll 0.6s ease-out forwards;
+}
+
+.audit-title {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+}
+
+@keyframes smoothScroll {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .inner-width {
-    max-width: 1200px;
     width: 100%;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
+    box-sizing: border-box;
+    /* Ensures padding is included within the width */
+    margin-top: -3rem;
 }
 
 .audit-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .audit-info {
@@ -28,11 +60,10 @@
     text-align: left;
 }
 
-.audit-title {
+.audit-subtitle {
     font-size: 2.5rem;
     color: #333;
     margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 
 .audit-description {
@@ -55,8 +86,6 @@
 .audit-image-wrapper {
     width: 100%;
     text-align: center;
-    margin-top: 2rem;
-    margin-top: 1rem;
 }
 
 .audit-image {
@@ -100,16 +129,14 @@
     .audit-content {
         flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
     }
 
     .audit-info {
-        width: 50%;
+        width: 74%;
     }
 
     .audit-image-wrapper {
-        width: 50%;
+        width: 26%;
         text-align: right;
-        margin-top: 0;
     }
 }

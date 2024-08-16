@@ -33,6 +33,11 @@ const HumanResourceManagement = () => {
 
         {/* Right side - Google Map and Contact Details */}
         <div className="human-resource-management-right">
+          <img
+            src="/mcephalogo.png"
+            alt="Mcepha & Associates Logo"
+            className="logo"
+          />
           <div className="map-container">
             <iframe
               title="Mcepha & Associates"

@@ -1,0 +1,116 @@
+.independent-business-reviews-wrapper {
+    width: 100%;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.independent-business-reviews-heading-container {
+    width: 100%;
+    background-color: orange;
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.independent-business-reviews-heading {
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.inner-width {
+    max-width: 1200px;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.independent-business-reviews-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.independent-business-reviews-left {
+    width: 74%;
+    text-align: left;
+}
+
+.independent-business-reviews-left p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.independent-business-reviews-right {
+    width: 26%;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.map-container {
+    margin-bottom: 1rem;
+}
+
+.view-larger-map-button {
+    margin-top: 0.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.view-larger-map-button:hover {
+    background-color: #0056b3;
+}
+
+.location-details {
+    font-size: 1rem;
+    color: #333;
+}
+
+.location-details p {
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .independent-business-reviews-content {
+        flex-direction: column;
+    }
+
+    .independent-business-reviews-left,
+    .independent-business-reviews-right {
+        width: 100%;
+    }
+
+    .independent-business-reviews-heading {
+        font-size: 2rem;
+    }
+}

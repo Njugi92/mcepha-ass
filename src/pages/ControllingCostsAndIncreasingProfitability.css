@@ -1,0 +1,149 @@
+/* General styles for the page */
+.controlling-costs-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Title styling */
+.controlling-costs-title {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 20px 0;
+    width: 100%;
+    height: 38vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    /* Use flex to center content */
+    align-items: center;
+    /* Center vertically */
+    justify-content: center;
+    /* Center horizontally */
+}
+
+/* Animation for title */
+@keyframes scrollAnimation {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.controlling-costs-title {
+    animation: scrollAnimation 0.5s ease-out;
+}
+
+/* Main content container */
+.controlling-costs-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-grow: 1;
+    /* Allow this container to grow and fill available space */
+}
+
+/* Left side styling */
+.controlling-costs-left {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.controlling-costs-left p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Right side styling */
+.controlling-costs-right {
+    width: 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.controlling-costs-right img.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.view-larger-map-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.view-larger-map-button:hover {
+    background-color: #cc7400;
+}
+
+.location-details {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.location-details p {
+    margin: 5px 0;
+}
+
+.location-details a {
+    color: blue;
+    text-decoration: none;
+}
+
+.location-details a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .controlling-costs-content {
+        flex-direction: column;
+    }
+
+    .controlling-costs-left,
+    .controlling-costs-right {
+        width: 100%;
+    }
+
+    .map-container iframe {
+        height: 150px;
+    }
+
+    .view-larger-map-button {
+        font-size: 0.9rem;
+    }
+}

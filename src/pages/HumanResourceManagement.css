@@ -55,6 +55,11 @@
     align-items: center;
 }
 
+.logo {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
 .map-container {
     position: relative;
     width: 100%;

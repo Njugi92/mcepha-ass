@@ -19,7 +19,7 @@ const BusinessAdvisory = () => {
     "Enterprise Performance Management",
     "Due Diligence Reports",
     "Corporate Finance Advisory",
-    "Receivables Management", // Added link
+    "Receivables Management",
     "Independent Business Reviews",
     "Debt Financing and Management Advisory",
     "Controlling Costs and Increasing Profitability",
@@ -27,6 +27,9 @@ const BusinessAdvisory = () => {
 
   return (
     <section className="business-advisory-wrapper">
+      <div className="business-advisory-title">
+        Our Business Advisory Services
+      </div>
       <div className="inner-width">
         <div className="business-advisory-content">
           <div className="business-advisory-left">
@@ -93,6 +96,28 @@ const BusinessAdvisory = () => {
                   >
                     {description}
                   </RouterLink>
+                ) : description === "Independent Business Reviews" ? (
+                  <RouterLink
+                    to="/businessadvisory/independentbusinessreviews"
+                    className="business-advisory-link"
+                  >
+                    {description}
+                  </RouterLink>
+                ) : description === "Debt Financing and Management Advisory" ? (
+                  <RouterLink
+                    to="/businessadvisory/debtfinancingandmanagementadvisory"
+                    className="business-advisory-link"
+                  >
+                    {description}
+                  </RouterLink>
+                ) : description ===
+                  "Controlling Costs and Increasing Profitability" ? (
+                  <RouterLink
+                    to="/businessadvisory/controllingcostsandincreasingprofitability"
+                    className="business-advisory-link"
+                  >
+                    {description}
+                  </RouterLink>
                 ) : (
                   <a
                     href={`#${description.split(" ").join("-").toLowerCase()}`}
@@ -105,6 +130,11 @@ const BusinessAdvisory = () => {
             ))}
           </div>
           <div className="business-advisory-right">
+            <img
+              src="/mcephalogo.png"
+              alt="Mcepha & Associates Logo"
+              className="logo"
+            />
             <div className="map-container">
               <iframe
                 title="Thika Equity Plaza"
@@ -137,25 +167,6 @@ const BusinessAdvisory = () => {
                   </a>
                 </p>
               </div>
-            </div>
-            <div className="menu-items">
-              <ul>
-                <li>
-                  <RouterLink to="/">Home</RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/#about">About Us</RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/#values">Our Values</RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/#contact">Contact Us</RouterLink>
-                </li>
-                <li>
-                  <RouterLink to="/#getstarted">Get Started</RouterLink>
-                </li>
-              </ul>
             </div>
           </div>
         </div>

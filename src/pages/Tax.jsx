@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Tax.css";
 
 const Tax = () => {
@@ -15,6 +15,28 @@ const Tax = () => {
     totalMonthly: null,
     totalAnnual: null,
   });
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const titleElement = document.querySelector(".tax-heading");
+      if (titleElement) {
+        const scrollPosition = window.scrollY;
+        const titleHeight = titleElement.getBoundingClientRect().height;
+
+        if (scrollPosition <= titleHeight) {
+          titleElement.style.transform = `translateY(${scrollPosition}px)`;
+        } else {
+          titleElement.style.transform = `translateY(${titleHeight}px)`;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const calculateTax = () => {
     const incomeValue = parseFloat(income);
@@ -58,8 +80,10 @@ const Tax = () => {
 
   return (
     <section className="tax-wrapper">
-      <div className="inner-width">
+      <div className="tax-heading-container">
         <h1 className="tax-heading">Tax Calculation</h1>
+      </div>
+      <div className="inner-width">
         <div className="tax-content">
           <div className="tax-info">
             <p>
@@ -74,6 +98,14 @@ const Tax = () => {
             />
           </div>
           <div className="tax-calculator">
+            <img
+              src="/mcephalogo.png"
+              alt="Mcepha & Associates Logo"
+              className="logo"
+            />
+            <p className="income-prompt">
+              <strong>Please enter your monthly income:</strong>
+            </p>
             <input
               type="text"
               placeholder="Enter your income in KES"
