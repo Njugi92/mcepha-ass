@@ -1,38 +1,56 @@
 .governance-risk-compliance-wrapper {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: #333;
     color: white;
-    font-family: Arial, sans-serif;
-    
 }
 
 .title {
-    font-size: 36px;
-    font-weight: bold;
-    text-align: center;
+    background-color: orange;
     color: white;
-    margin-bottom: 20px;
-    margin-top: 4rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    height: 38vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slideInFromTop 1.5s ease-in-out;
+    width: 100%;
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .content {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
     flex-wrap: wrap;
 }
 
 .left-side {
-    width: 48%;
-    font-size: 18px;
+    flex: 1 1 74%;
+    padding: 20px;
+    color: white;
 }
 
 .right-side {
-    width: 48%;
-    text-align: center;
+    flex: 1 1 26%;
+    padding: 20px;
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -41,12 +59,15 @@
 }
 
 .view-larger-map-button {
+    display: block;
     margin-top: 10px;
     padding: 10px 15px;
     background-color: #007bff;
     color: white;
     border: none;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
 }
 
 .view-larger-map-button:hover {
@@ -62,17 +83,74 @@
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
+/* Responsive Design */
+@media (max-width: 1200px) {
     .content {
         flex-direction: column;
     }
 
     .left-side,
     .right-side {
-        width: 100%;
+        flex: 1 1 100%;
+        margin: 0;
+        padding: 10px;
     }
 
     .logo {
-        max-width: 80px;
+        max-width: 80%;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 2rem;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .left-side p,
+    .left-side ul {
+        font-size: 0.9em;
+    }
+
+    .map-container iframe {
+        height: 200px;
+    }
+
+    .view-larger-map-button {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+
+    .location-details {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .left-side p,
+    .left-side ul {
+        font-size: 0.8em;
+    }
+
+    .map-container iframe {
+        height: 150px;
+    }
+
+    .view-larger-map-button {
+        padding: 6px 10px;
+        font-size: 0.8em;
+    }
+
+    .location-details {
+        font-size: 0.8em;
     }
 }

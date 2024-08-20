@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as ScrollLink } from "react-scroll";
 import "./Footer.css";
 
 const Footer = () => {
@@ -21,7 +22,7 @@ const Footer = () => {
           <span className="primaryText">Information</span>
           <span className="secondaryText">
             {" "}
-            5TH FLOOR EQUITY PLAZA BIASHARA STREET
+            Room 501, 5TH FLOOR EQUITY PLAZA BIASHARA STREET
           </span>
 
           <div className="flexCenter f-menu">

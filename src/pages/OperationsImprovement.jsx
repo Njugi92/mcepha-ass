@@ -52,7 +52,7 @@ const OperationsImprovement = () => {
             <div className="map-container">
               <iframe
                 title="Mcepha & Associates"
-                src="https://www.google.com/maps/d/embed?mid=1EQyRfY9RSBmnkx0Ux7ODwMjTrkB_idg&ehbc=2E312F"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.1653894412675!2d37.0728851!3d-1.0365746999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f4f0022be22c9%3A0x3c072f9805fa5a4e!2sMcepha%20%26%20Associates!5e0!3m2!1sen!2ske!4v1724116505063!5m2!1sen!2ske"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}
