@@ -22,14 +22,16 @@ const Footer = () => {
           <span className="primaryText">Information</span>
           <span className="secondaryText">
             {" "}
-            Room 501, 5TH FLOOR EQUITY PLAZA BIASHARA STREET
+            Room 505, 5TH FLOOR EQUITY PLAZA BIASHARA STREET
           </span>
 
           <div className="flexCenter f-menu">
-            <span>Home</span>
-            <span>Our Values</span>
-            <span>Services</span>
-            <span>contact</span>
+            <span>Software Designed & Developed</span>
+            <span>By:</span>
+            <span>
+              KenTech Web Solutions. &copy; {new Date().getFullYear()}
+            </span>
+            <span>call:+254716485037</span>
           </div>
         </div>
       </div>

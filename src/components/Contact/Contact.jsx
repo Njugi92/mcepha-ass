@@ -5,6 +5,24 @@ import { BsFillChatDotsFill } from "react-icons/bs";
 import { HiChatBubbleBottomCenter } from "react-icons/hi2";
 
 const Contact = () => {
+  const phoneNumber = "+254721271910"; // Replace with your top number
+
+  const handleWhatsAppCall = () => {
+    window.open(`https://wa.me/${phoneNumber}?call`, "_blank");
+  };
+
+  const handleWhatsAppChat = () => {
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+  };
+
+  const handleWhatsAppVideoCall = () => {
+    window.open(`https://wa.me/${phoneNumber}?video`, "_blank");
+  };
+
+  const handleWhatsAppMessage = () => {
+    window.open(`https://wa.me/${phoneNumber}?text=`, "_blank");
+  };
+
   return (
     <section className="c-wrapper contain" id="Contact">
       <div className="paddings innerWidth flexCenter c-container">
@@ -14,7 +32,7 @@ const Contact = () => {
           <span className="primaryText">Easy to Contact Us</span>
           <span className="secondaryText">
             We are always ready to help by providing the best service <br />
-            We belive good financial management can make your life better
+            We believe good financial management can make your life better
           </span>
 
           <div className="flexColStart contactModes">
@@ -31,7 +49,9 @@ const Contact = () => {
                     <span className="secondaryText">+254 733-997933</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call Now</div>
+                <div className="flexCenter button" onClick={handleWhatsAppCall}>
+                  Call Now
+                </div>
               </div>
 
               {/* second mode */}
@@ -46,7 +66,9 @@ const Contact = () => {
                     <span className="secondaryText">+254 733-997933</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat Now</div>
+                <div className="flexCenter button" onClick={handleWhatsAppChat}>
+                  Chat Now
+                </div>
               </div>
             </div>
 
@@ -63,7 +85,12 @@ const Contact = () => {
                     <span className="secondaryText">+254 733-997933</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call Now</div>
+                <div
+                  className="flexCenter button"
+                  onClick={handleWhatsAppVideoCall}
+                >
+                  Video Call Now
+                </div>
               </div>
 
               {/* forth mode */}
@@ -78,7 +105,12 @@ const Contact = () => {
                     <span className="secondaryText">+254 733-997933</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message Now</div>
+                <div
+                  className="flexCenter button"
+                  onClick={handleWhatsAppMessage}
+                >
+                  Message Now
+                </div>
               </div>
             </div>
           </div>
@@ -87,7 +119,7 @@ const Contact = () => {
         {/* right side */}
         <div className="c-right">
           <div className="image-container">
-            <img src="./bizadvice.jpg" alt="" />
+            <img src="./bizadvice.jpg" alt="Contact Us" />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ const About = ({ setPlayState }) => {
   return (
     <div className="about" id="About">
       <div className="about-left">
-        <img src="./about1.jpg" alt="" className="about-img" />
+        <img src="./kencur3.png" alt="" className="about-img" />
         <img
           src="./play-icon.png"
           alt=""

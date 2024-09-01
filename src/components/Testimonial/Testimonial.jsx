@@ -8,32 +8,32 @@ import "swiper/css";
 const Testimonial = () => {
   const clients = [
     {
-      img: "./profile1.jpg",
+      img: "./realestate.jpg",
       name: "Fabulex Investments Ltd",
       review:
         " Choosing to work with Mcepha & Associates on Filling tax our company....",
     },
     {
-      img: "./profile2.jpg",
+      img: "./audit-img.jpg",
       name: "Reward Computers Systems Ltd",
       review:
         " Choosing to work with Mcepha & Associates on Filling tax our company....",
     },
     {
-      img: "./profile3.jpg",
+      img: "./drycleaner.jpg",
       name: "Pioneer Dry Cleaners Ltd",
       review:
         " Choosing to work with Mcepha & Associates on Filling tax our company....",
     },
     {
-      img: "./profile4.jpg",
+      img: "./tax.jpg",
       name: "Gichuke Ribathi Advocates",
       review:
         " Choosing to work with Mcepha & Associates on Filling tax our company....",
     },
     {
-      img: "./profile5.jpg",
-      name: "Gichuke Ribathi Advocates",
+      img: "./hospital.jpg",
+      name: "Central Memorial Hospital",
       review:
         " Choosing to work with Mcepha & Associates on Filling tax our company....",
     },
@@ -42,7 +42,7 @@ const Testimonial = () => {
     <div className="t-wrapper contain" id="Testimonial">
       <div className="t-heading">
         <span>Clients always get</span>
-        <span>Exceptional Work</span>
+        <span>Exceptional Services</span>
         <span>from Us...</span>
         <div
           className="blur t-blur1"

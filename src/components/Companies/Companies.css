@@ -10,8 +10,18 @@
 .c-container>img {
     width: 10rem;
     border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    /* Smooth zoom animation */
+    cursor: pointer;
+    /* Pointer cursor on hover */
 }
 
+.c-container>img:hover {
+    transform: scale(1.1);
+    /* Zoom the image on hover */
+}
+
+/* Wrapper for alignment */
 .c-wrapper {
     width: 100%;
     display: flex;

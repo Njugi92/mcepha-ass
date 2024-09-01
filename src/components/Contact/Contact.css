@@ -1,18 +1,25 @@
 .c-container {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    /* Optional: Adjust the gap between the sections */
 }
 
 .c-container>div {
     flex: 1;
 }
 
-.c-right {
-    width: 100%;
-
+.c-left {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.c-left {
-    gap: 0.5rem;
+.c-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .contactModes {
@@ -21,6 +28,8 @@
 }
 
 .contactModes.row {
+    display: flex;
+    justify-content: space-between;
     gap: 1.5rem;
 }
 
@@ -52,24 +61,21 @@
 }
 
 .mode:hover {
-    scale: 1.1;
+    transform: scale(1.1);
     box-shadow: var(--shadow);
 }
 
 .mode .button:hover {
     background: var(--blue-gradient);
     color: white;
-    scale: 0.8;
+    transform: scale(0.8);
 }
 
-/* media query */
-@media (max-width:1024px) {
+/* Media query */
+@media (max-width: 1024px) {
     .c-container {
         flex-direction: column;
-    }
-
-    .c-right {
-        justify-content: center;
+        gap: 2rem;
     }
 
     .contactModes {
@@ -79,6 +85,7 @@
     .row {
         flex-direction: column;
         width: 100%;
+        gap: 1.5rem;
     }
 
     .mode {

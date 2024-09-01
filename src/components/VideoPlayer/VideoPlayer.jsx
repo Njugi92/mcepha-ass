@@ -15,7 +15,7 @@ const VideoPlayer = ({ playState, setPlayState }) => {
       ref={player}
       onClick={closePlayer}
     >
-      <video src="./video1.mp4" autoPlay muted controls></video>
+      <video src="./mcephavid.mp4" autoPlay muted controls></video>
     </div>
   );
 };

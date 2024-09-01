@@ -13,10 +13,10 @@ const Accountancy = () => {
             solutions to meet the unique needs of your business.
           </p>
           <ul className="services-list">
-            <li>Financial Reporting</li>
-            <li>Tax Preparation & Planning</li>
-            <li>Audit Support</li>
-            <li>Business Advisory</li>
+            <li>Financial Reporting Accounting</li>
+            <li>Tax Preparation & Planning Accounting</li>
+            <li>Management Accounting</li>
+            <li>Accountancy and Book Keeping</li>
           </ul>
           <button className="cta-button">Learn More</button>
         </div>
